@@ -28,8 +28,8 @@ services:
      "-config", "/config/config.yaml"
      ]
     volumes:
-      - "./dapr/dc-components/:/components"
-      - "./dapr/dc-config/:/config"
+      - "./dapr/dc-components:/components"
+      - "./dapr/dc-config:/config"
     depends_on:
       - catalog
     network_mode: "service:catalog"
